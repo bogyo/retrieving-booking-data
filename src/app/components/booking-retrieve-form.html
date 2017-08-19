@@ -1,0 +1,42 @@
+<div id="bookingForm">
+  <form novalidate (ngSubmit)="onSubmit(booking)" [formGroup]="booking">
+  <!-- TODO organise error to a seperate component would much better. -->
+  <div class="errorHolder">
+    <div
+    class="error"
+    *ngIf="booking.get('bookingCode').hasError('required') && booking.get('bookingCode').touched">
+      Booking Code is required
+    </div>
+    <div
+    class="error"
+    *ngIf="(booking.get('bookingCode').hasError('minlength')||
+    booking.get('bookingCode').hasError('maxlength') || booking.get('bookingCode').hasError('pattern'))
+    && booking.get('bookingCode').touched">
+      Booking Code is invalid.
+    </div>
+    <div
+    class="error"
+    *ngIf="booking.get('lastName').hasError('required') && booking.get('lastName').touched">
+      Family name is required
+    </div>
+    <div
+    class="error"
+    *ngIf="(booking.get('lastName').hasError('minlength')||
+    booking.get('lastName').hasError('maxlength'))
+    && booking.get('bookingCode').touched">
+      Are sure this is your family name? :)
+    </div>
+  </div>
+
+ <label for="bookingCode">
+     Booking code:
+  </label>
+    <input type="text" formControlName="bookingCode">
+    <label for="lastName">
+      Family name:
+    </label>
+   <input type="text" formControlName="lastName">
+  <button type="submit" [disabled]="booking.invalid">Retrieve booking</button>
+  </form>
+
+</div>

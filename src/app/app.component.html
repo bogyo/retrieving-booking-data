@@ -1,0 +1,29 @@
+<div id="appContent">
+  <header>
+    <h-title></h-title>
+  </header>
+  <section class="centered box"
+  *ngIf="!this.booking">
+    <h-content></h-content>
+    <retrieve-booking-form
+     (onGetMyBooking)="onGetMyBooking($event)">
+   </retrieve-booking-form>
+  </section>
+
+<!-- TODO make seperate compontent from this -->
+  <section class="centered box"
+  *ngIf="this.booking">
+
+    <div *ngIf="objectKeys(this.booking).length > 1">
+      <h1> Here are your booking details </h1>
+      <ul>
+        <li *ngFor="let key of objectKeys(this.booking)">
+          <span> {{this.booking[key]}}</span>
+        </li>
+      </ul>
+    </div>
+    <h1 *ngIf="objectKeys(this.booking).length === 1">
+      We are sorry.<br> No booking information found.
+    </h1>
+  </section>
+</div>

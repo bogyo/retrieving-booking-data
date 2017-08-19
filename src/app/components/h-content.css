@@ -1,0 +1,30 @@
+* {
+  line-height: 1.5em;
+}
+
+h1 {
+ position: relative;
+ font-size: 2em;
+ text-align: center;
+ text-transform: uppercase;
+ padding-bottom: 20px;
+}
+
+h1:after {
+ content: '';
+ position: absolute;
+ width: 30px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin-left: auto;
+ margin-right: auto;
+ z-index: 1;
+ border-bottom: 5px solid #003145;
+}
+
+p {
+ padding-right: 10px;
+ margin-bottom: 30px;
+ text-align: justify;
+}
