@@ -16,7 +16,6 @@ Browser should open on port 4200.
 
 Please NOTE: This is my first experiment with angular 4. 
 
-
 Application strucure and features:
 - components/
   <b>Booking-retrive-form</b>
@@ -31,8 +30,8 @@ Application strucure and features:
     a. only view component display and stlye text.
   <b>h-title</b> 
     a. only view component display static header with background.
-- interfaces
-  <b>
+- interfaces<br>
+  <b>booking.interface</b>
   a. booking interface with two rewiered string type field
 - services
   <b>booking.service</b>
@@ -43,7 +42,7 @@ Application strucure and features:
   <b>in-memory-data.service</b>
     a. return the mocked booking response. 
     
-- App Component
+- <b>App Component</b>
   This is the  main component located in the root.
   a. handling reuest to services
   b. display template parts with the dynamic data.
