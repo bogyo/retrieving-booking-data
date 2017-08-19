@@ -26,23 +26,23 @@ Application strucure and features:
   b. If validation failed error is shown above the form. 
   c. calls the passed callback onSubmit
   
-  <b>h-content</b> 
-    a. only view component display and stlye text.
-  <b>h-title</b> 
-    a. only view component display static header with background.
+  <b>h-content</b><br> 
+    a. only view component display and stlye text.<br>
+  <b>h-title</b> <br>
+    a. only view component display static header with background.<br>
 - interfaces<br>
-  <b>booking.interface</b>
-  a. booking interface with two rewiered string type field
-- services
-  <b>booking.service</b>
+  <b>booking.interface</b><br>
+  a. booking interface with two rewiered string type field<br>
+- services<br>
+  <b>booking.service</b><br>
   a. make http request with bookingCode as param (TODO: add lastName to query)
   b. extract data as json from response Observable
   c. very simple error handling
   
-  <b>in-memory-data.service</b>
-    a. return the mocked booking response. 
+  <b>in-memory-data.service</b><br>
+    a. return the mocked booking response. <br>
     
-- <b>App Component</b>
+- <b>App Component</b><br>
   This is the  main component located in the root.
   a. handling reuest to services
   b. display template parts with the dynamic data.
