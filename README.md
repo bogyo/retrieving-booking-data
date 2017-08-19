@@ -11,6 +11,9 @@ $ ng serve
 
 Browser should open on port 4200.
 
+<b>Please note: mocked service serve booking data only with valid booking code, otherwise message will be shown.</b>
+Valide code is: "PZIGZ3"</b>
+
 
 2. General information
 
@@ -61,6 +64,9 @@ I've follow the attached design,  please note this is a prototype not pixel perf
 Possible todos
  - more test!!!
  - using node server to for handling requests and serve the application.
+ - improve error handling
+ - attache router to handling app changes
+ - more attention to CSS and design
 
 3. Build and testing
 
