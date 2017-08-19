@@ -48,9 +48,10 @@ Application strucure and features:
 
 - <b>App Component</b><br>
   This is the  main component located in the root.
-  a. handling reuest to services
-  b. display template parts with the dynamic data.
+  a. handling reuests to services
+  b. display template parts with the dynamic data (for instance: if we got booking detail or not).
   c. transform data to be displayed
+  d. display the booking retrieve form component or a simple list with booking details (I displayed here values from the mocked data, without serious style, just a simple list.
 
 Additional info
 
@@ -68,7 +69,7 @@ Possible todos
     serve app from here with command: ng build => create dist and node server.js => serve from dist))
  - improve error handling
  - attache router to handling app changes
- - more attention to CSS and design
+ - more attention to CSS and design (for instance list of booking details, refact to a nice table with labels).
 
 3. Build and testing
 
