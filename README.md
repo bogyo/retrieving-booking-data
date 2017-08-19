@@ -17,6 +17,7 @@ Browser should open on port 4200.
 Please NOTE: This is my first experiment with angular 4. 
 
 Application strucure and features:
+
 - components/
   <b>Booking-retrive-form</b>
 
@@ -47,9 +48,19 @@ Application strucure and features:
   a. handling reuest to services
   b. display template parts with the dynamic data.
   c. transform data to be displayed
-  
+ 
+Additional info
+
+I choosed a more modular separation to seperate services, components, interfaces, main component. In a bigger app it is probably useful to make it more modular (for instace folders to components).
+
+The appication is fully responsive. Just to simplify the development I used only breakpoint (640px wide) to seperate mobile and desktop view. I used only pure css here, no preprocessor added.
+
+I've try to pay attention to accessiblity like using labels for inputs.
+I've follow the attached design,  please note this is a prototype not pixel perfect (fonts are different (Excellence In Motion was no available))
 
 Possible todos
+ - more test!!!
+ - using node server to for handling requests and serve the application.
 
 3. Build and testing
 
