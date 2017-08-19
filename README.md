@@ -12,9 +12,7 @@ $ ng serve
 Browser should open on port 4200.
 
 <b>Please note: mocked service serve booking data only with valid booking code, otherwise message will be shown.</b>
-Valide code is: "PZIGZ3"</b><br>
-
-
+Valide code is: "PZIGZ3"</b> (I didn't checked familyName to be equal to a passanger name as well at this time #lackofTime )<br>
 
 2. General information
 
@@ -64,6 +62,7 @@ I've follow the attached design,  please note this is a prototype not pixel perf
 
 Possible todos
  - unit test!!!
+ - check bookingcode and familyname as well to return mock data.
  - using node server to for handling requests and serve the application.
     server.js attached already but in use.
     serve app from here with command: ng build => create dist and node server.js => serve from dist))
