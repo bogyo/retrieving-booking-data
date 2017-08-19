@@ -12,12 +12,11 @@ $ ng serve
 Browser should open on port 4200.
 
 <b>Please note: mocked service serve booking data only with valid booking code, otherwise message will be shown.</b>
-Valide code is: "PZIGZ3"</b>
+Valide code is: "PZIGZ3"</b><br>
+
 
 
 2. General information
-
-Please NOTE: This is my first experiment with angular 4. 
 
 Application strucure and features:
 
@@ -62,7 +61,7 @@ I've try to pay attention to accessiblity like using labels for inputs.
 I've follow the attached design,  please note this is a prototype not pixel perfect (fonts are different (Excellence In Motion was no available))
 
 Possible todos
- - more test!!!
+ - unit test!!!
  - using node server to for handling requests and serve the application.
  - improve error handling
  - attache router to handling app changes
@@ -71,3 +70,5 @@ Possible todos
 3. Build and testing
 
 Application was built with angular-cli, so please check angular-cli for avaliable commands.
+
+Please NOTE: <b>!!! It seems current version of angular-cli has a webpack issue. ng test not running at all (neither with newly generated empty project). </b> Similar issue to this: https://github.com/angular/angular-cli/issues/6457. Since this is my first experiment with angular 4 it would be more time debugging this. 
