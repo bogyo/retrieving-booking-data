@@ -26,10 +26,11 @@ Application strucure and features:
   a. Display form with two input fields
    - Booking Code (validation: 5-6 car length, only alphabet and number 2-9),
    - Family name (validation: 2-30 car length only alphabet)
-  b. If validation failed error is shown above the form. 
-  c. calls the passed callback onSubmit
-  
-  <b>h-content</b><br> 
+  b. If validation failed error is shown above the form.
+  c. button disabled until booking code is formally valid
+  d. calls the passed callback onSubmit
+
+  <b>h-content</b><br>
     a. only view component display and stlye text.<br>
   <b>h-title</b> <br>
     a. only view component display static header with background.<br>
@@ -41,16 +42,16 @@ Application strucure and features:
   a. make http request with bookingCode as param (TODO: add lastName to query)
   b. extract data as json from response Observable
   c. very simple error handling
-  
+
   <b>in-memory-data.service</b><br>
     a. return the mocked booking response. <br>
-    
+
 - <b>App Component</b><br>
   This is the  main component located in the root.
   a. handling reuest to services
   b. display template parts with the dynamic data.
   c. transform data to be displayed
- 
+
 Additional info
 
 I choosed a more modular separation to seperate services, components, interfaces, main component. In a bigger app it is probably useful to make it more modular (for instace folders to components).
@@ -63,6 +64,8 @@ I've follow the attached design,  please note this is a prototype not pixel perf
 Possible todos
  - unit test!!!
  - using node server to for handling requests and serve the application.
+    server.js attached already but in use.
+    serve app from here with command: ng build => create dist and node server.js => serve from dist))
  - improve error handling
  - attache router to handling app changes
  - more attention to CSS and design
@@ -71,4 +74,4 @@ Possible todos
 
 Application was built with angular-cli, so please check angular-cli for avaliable commands.
 
-Please NOTE: <b>!!! It seems current version of angular-cli has a webpack issue. ng test not running at all (neither with newly generated empty project). </b> Similar issue to this: https://github.com/angular/angular-cli/issues/6457. Since this is my first experiment with angular 4 it would be more time debugging this. 
+Please NOTE: <b>!!! It seems current version of angular-cli has a webpack issue. ng test not running at all (neither with newly generated empty project). </b> Similar issue to this: https://github.com/angular/angular-cli/issues/6457. Since this is my first experiment with angular 4 it would be more time debugging this.

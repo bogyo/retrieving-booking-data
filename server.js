@@ -15,10 +15,8 @@ app.get('/*', function (req, res) {
 res.sendFile(path.join(distDir,'index.html'));
 });
 
-// if i've got booking code
-app.get("/api/booking/:id", function(req, res) {
-  console.log('something');
-});
+// if i've got booking code and family name
+
 
 // Initialize the app.
 var server = app.listen(process.env.PORT || 8080, function () {
