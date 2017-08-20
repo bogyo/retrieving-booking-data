@@ -114,6 +114,15 @@ export class InMemoryDataService implements InMemoryDbService {
                         }]
             }]
         },
+        "passengers": {
+                  "id": 1,
+                  "firstName": "RUUD",
+                  "lastName": "HESP",
+                  "title": {
+                      "code": "MR",
+                      "name": "Mr"
+                  }
+          }
  }];
     return {booking};
   }
