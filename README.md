@@ -12,11 +12,7 @@ retrieving single booking data deflects to user inputs reactive-way
 Browser should open on port 4200.
 
 <b>Please note: mocked service serve booking data only with valid booking code, otherwise message will be shown.</b>
-<<<<<<< HEAD
-Valide code is: "PZIGZ3"</b><br>
-=======
-Valide code is: "PZIGZ3"</b> (I didn't checked familyName to be equal to a passanger name as well at this time #lackofTime )<br>
->>>>>>> b835ebb9f072cec02f1d2905bb720fa6d5691e99
+Valid code is: "PZIGZ3"</b><br>
 
 2. General information
 
@@ -50,15 +46,10 @@ Application strucure and features:
     a. return the mocked booking response.(Same as in mock.json) <br>
 
 - <b>App Component</b><br>
-<<<<<<< HEAD
+
   This is the  main component, located in the root.
   a. handling request to services
   b. display template parts with the dynamic data.
-=======
-  This is the  main component located in the root.
-  a. handling reuests to services
-  b. display template parts with the dynamic data (for instance: if we got booking detail or not).
->>>>>>> b835ebb9f072cec02f1d2905bb720fa6d5691e99
   c. transform data to be displayed
   d. display the booking retrieve form component or a simple list with booking details (I displayed here values from the mocked data, without serious style, just a simple list.
 
