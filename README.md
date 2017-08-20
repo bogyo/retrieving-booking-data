@@ -2,7 +2,7 @@
 retrieving single booking data deflects to user inputs reactive-way
 
 
-1. Install
+<b>1. Install</b>
 
 - clone the repo<br>
 - open a terminal in the created directory root<br>
@@ -14,19 +14,19 @@ Browser should open on port 4200.
 <b>Please note: mocked service serve booking data only with valid booking code, otherwise message will be shown.</b>
 Valid code is: "PZIGZ3"</b><br>
 
-2. General information
+<b>2. General information</b>
 
 Application strucure and features:
 
 - components/
   <b>Booking-retrive-form</b>
 
-  a. Display form with two input fields
-   - Booking Code (validation: 5-6 car length, only alphabet and number 2-9),
-   - Family name (validation: 2-30 car length only alphabet)
-  b. If validation failed and related input was touched error message will be shown above the form.
-  c. button disabled until booking code is formally valid
-  d. calls the passed callback onSubmit
+  a. Display form with two input fields<br>
+   - Booking Code (validation: 5-6 car length, only alphabet and number 2-9),<br>
+   - Family name (validation: 2-30 car length only alphabet)<br>
+  b. If validation failed and related input was touched error message will be shown above the form.<br>
+  c. button disabled until booking code is formally valid<br>
+  d. calls the passed callback onSubmit<br>
 
   <b>h-content</b><br>
     a. only view component display and style text.<br>
@@ -47,13 +47,13 @@ Application strucure and features:
 
 - <b>App Component</b><br>
 
-  This is the  main component, located in the root.
+  This is the  main component, located in the root.<br>
   a. handling request to services <br>
   b. display template parts with the dynamic data.<br>
   c. transform data to be displayed <br>
   d. display the booking retrieve form component or a simple list with booking details (I displayed here values from the mocked data, without serious style, just a simple list.<br>
 
-Additional info
+<b>Additional info</b>
 
 I choosed a more modular separation to seperate services, components, interfaces and the main component. In a bigger app it is probably useful to make it more modular (for instance folders to components).
 I leaved the main component in the app route, to indicate this is the main component in the application.
@@ -63,7 +63,7 @@ The application is fully responsive. Just to simplify the development I used onl
 I've try to pay attention to accessibility like using labels for inputs.
 I've follow the attached design,  please note this is a prototype not pixel perfect (fonts are different (Excellence In Motion was no available))
 
-Possible todos
+<b>Possible todos</b><br>
  - unit test!!!
  - check bookingcode and familyname as well to return mock data.
  - using node server to for handling requests and serve the application.
@@ -73,7 +73,7 @@ Possible todos
  - attache router to handling app changes
  - more attention to CSS and design (for instance list of booking details, refact to a nice table with labels).
 
-3. Build and testing
+<b>3. Build and testing</b>
 
 Application was built with angular-cli, so please check angular-cli for avaliable commands.
 
