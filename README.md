@@ -37,10 +37,10 @@ Application strucure and features:
   a. booking interface with two string type field<br>
 - services<br>
   <b>booking.service</b><br>
-  a. make http request with bookingCode as param (TODO: add lastName to query)
-  (I used only a booking code check to simply development process.)
-  b. extract data as json from response Observable
-  c. very simple error handling
+  a. make http request with bookingCode as param (TODO: add lastName to query)<br>
+  (I used only a booking code check to simply development process.)<br>
+  b. extract data as json from response Observable<br>
+  c. very simple error handling<br>
 
   <b>in-memory-data.service</b><br>
     a. return the mocked booking response.(Same as in mock.json) <br>
@@ -48,10 +48,10 @@ Application strucure and features:
 - <b>App Component</b><br>
 
   This is the  main component, located in the root.
-  a. handling request to services
-  b. display template parts with the dynamic data.
-  c. transform data to be displayed
-  d. display the booking retrieve form component or a simple list with booking details (I displayed here values from the mocked data, without serious style, just a simple list.
+  a. handling request to services <br>
+  b. display template parts with the dynamic data.<br>
+  c. transform data to be displayed <br>
+  d. display the booking retrieve form component or a simple list with booking details (I displayed here values from the mocked data, without serious style, just a simple list.<br>
 
 Additional info
 
